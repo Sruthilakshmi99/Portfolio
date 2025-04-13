@@ -28,4 +28,12 @@ Users need to provide the following inputs to the `/analyse` endpoint:
 
 ## Architecture Flow
 
+User | ↓ Google App Engine (GAE) API Frontend | ↓ Dynamic Resource Allocation Logic | | ↓ ↓ AWS Lambda AWS EC2 (Serverless) (Heavy Compute) | | ↓ ↓ Results Returned to GAE | ↓ Results Displayed to User
 
+yaml
+Copy
+Edit
+
+> GAE makes the decision to route computation either to Lambda or EC2 based on user-specified scale parameters (r - number of parallel executions).
+
+---
