@@ -1,0 +1,87 @@
+import json
+import math
+import random
+import time
+
+def lambda_handler(event, context):
+    # Start timing the execution
+    start_time = time.time()
+
+    # Extract event data
+    signals = event['signals']
+    close_prices = event['close_prices']
+    h = int(event['h'])
+    d = int(event['d'])
+    t = event['t']
+    p = int(event['p'])
+
+    length = min(len(signals), len(close_prices))  
+    var95_list = []
+    var99_list = []
+    profit_loss_list = []
+
+    # Function to calculate percentage changes
+    def percentage(arr):
+        values = []
+        for index in range(len(arr) - 1):
+            current = arr[index + 1]
+            previous = arr[index]
+            if previous != 0:
+                values.append((current - previous) / previous)
+        return values
+
+    # Calculate VaR
+    for i in range(h, length):
+        if i < len(signals) and t.capitalize() in signals[i] and signals[i][t.capitalize()] == 1:
+            minhistory_slice = close_prices[i - h : i]
+            percent_change = percentage(minhistory_slice)
+            if len(percent_change) > 0:  
+                mean = sum(percent_change) / len(percent_change)
+                std = math.sqrt(sum((x - mean) ** 2 for x in percent_change) / len(percent_change))
+                simulated = [random.gauss(mean, std) for _ in range(d)]
+                simulated.sort(reverse=True)
+                var95 = simulated[int(len(simulated) * 0.95)]
+                var99 = simulated[int(len(simulated) * 0.99)]
+                var95_list.append(var95)
+                var99_list.append(var99)
+
+    # Calculate profit/loss
+    for i in range(0, length - p):
+        if i < len(signals) and t.capitalize() in signals[i] and signals[i][t.capitalize()] == 1:
+            price_now = close_prices[i]
+            price_after_n_days = close_prices[i + p]
+            if t.capitalize() == "Buy":
+                profit_loss = price_after_n_days - price_now
+            else:
+                profit_loss = price_now - price_after_n_days
+            profit_loss_list.append(profit_loss)
+
+    # Calculate averages
+    avg_var95 = sum(var95_list) / len(var95_list) if var95_list else math.nan
+    avg_var99 = sum(var99_list) / len(var99_list) if var99_list else math.nan
+
+    # End timing the execution
+    end_time = time.time()
+    execution_duration_ms = (end_time - start_time) * 1000  # Convert to milliseconds
+
+    # Calculate billed duration (round up to nearest millisecond)
+    billed_duration_ms = math.ceil(execution_duration_ms)
+
+    # Prepare response
+    response = {
+        "Average VaR95": avg_var95,
+        "Average VaR99": avg_var99,
+        "Signal VaR99": var99_list,
+        "Signal VaR95": var95_list,
+        "Signal Profit/Loss": profit_loss_list
+    }
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps(response),
+        'executionDetails': {
+            'duration_ms': execution_duration_ms,
+            'billed_duration_ms': billed_duration_ms,
+            'memory_size_mb': context.memory_limit_in_mb
+        }
+    }
