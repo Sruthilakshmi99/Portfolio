@@ -1,0 +1,5 @@
+
+
+runtime: python312
+entrypoint: gunicorn --timeout 6000 -b :$PORT index:app
+
