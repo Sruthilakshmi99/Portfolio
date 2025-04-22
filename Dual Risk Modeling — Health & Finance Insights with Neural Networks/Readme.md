@@ -1,4 +1,4 @@
-# 🧠 Project Title: Dual Risk Prediction — Stroke & Loan Approval Using Data Visualization and Neural Networks
+# 🧠 Project Title: Dual Risk Modeling — Health & Finance Insights with Neural Networks
 
 This project applies a full data science pipeline — from preprocessing and visualization to deep learning-based prediction — across two real-world risk modeling scenarios:
 
@@ -52,9 +52,13 @@ It integrates **exploratory data analysis (EDA)**, **multi-layer perceptron (MLP
 ### Stroke Dataset:
 - Countplots for categorical variables
 - Histograms of numeric variables
+
+#### 📉 Stroke Prediction Histogram  
+![Stroke Prediction Histogram](./images/stroke%20prediction%20histogram.png)
+
 - **Correlation Heatmap:**
 
-
+![Stroke Correlation Heatmap](./images/stroke%20correlation%20heatmap.png)
 
 ---
 
@@ -62,7 +66,7 @@ It integrates **exploratory data analysis (EDA)**, **multi-layer perceptron (MLP
 - Bar charts and box plots for income, loan status, and fico score
 - **Correlation Heatmap:**
 
-
+![Loan Correlation Heatmap](./images/corelation%20heatmap%20-%20loan%20dataset.png)
 
 ---
 
@@ -104,7 +108,5 @@ It integrates **exploratory data analysis (EDA)**, **multi-layer perceptron (MLP
 - Seaborn, Matplotlib
 - Scikit-learn
 - PyTorch
-
----
 
 
