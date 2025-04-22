@@ -56,11 +56,6 @@ It integrates **exploratory data analysis (EDA)**, **multi-layer perceptron (MLP
 #### 📉 Stroke Prediction Histogram  
 ![Stroke Prediction Histogram](./images/stroke%20prediction%20histogram.png)
 
-- **Correlation Heatmap:**
-
-![Stroke Correlation Heatmap](./Dual Risk Modeling — Health & Finance Insights with Neural Networks/images/corelation heatmap - loan dataset.png).
-
----
 
 ### Loan Dataset:
 - Bar charts and box plots for income, loan status, and fico score
