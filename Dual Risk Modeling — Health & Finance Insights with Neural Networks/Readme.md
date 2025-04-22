@@ -58,7 +58,7 @@ It integrates **exploratory data analysis (EDA)**, **multi-layer perceptron (MLP
 
 - **Correlation Heatmap:**
 
-![Stroke Correlation Heatmap](Dual Risk Modeling — Health & Finance Insights with Neural Networks/images/corelation heatmap - loan dataset.png)
+![Stroke Correlation Heatmap](./Dual Risk Modeling — Health & Finance Insights with Neural Networks/images/corelation heatmap - loan dataset.png).
 
 ---
 
