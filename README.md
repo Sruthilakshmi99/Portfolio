@@ -10,6 +10,35 @@ I’m a passionate Data Scientist and Systems Engineer with over 2 years of indu
 
 I thrive at the intersection of **data**, **cloud**, and **intelligent automation**, building scalable solutions with impact. My goal is to leverage my background in engineering, systems thinking, and machine learning to develop smart systems that drive value.
 
+## 🚀 Projects
+
+### 🔹 [Cloud-Based Risk Analysis API](https://github.com/Sruthilakshmi99/Portfolio/tree/main/Cloud-Risk-Analysis-API)
+A multi-cloud API integrating **Google App Engine**, **AWS Lambda**, and **AWS EC2** to simulate trading strategies and calculate Value at Risk (VaR) using Monte Carlo simulations.
+
+- 🔁 Dynamic resource selection based on computation scale
+- 📊 Real-time risk and profitability metrics via RESTful API
+- 🧰 **Tech**: Python, Flask, GAE, Lambda, EC2, Yahoo Finance API
+
+---
+
+### 🔹 [Dual Risk Modeling — Health & Finance with Neural Networks](https://github.com/Sruthilakshmi99/Portfolio/tree/main/Dual%20Risk%20Modeling%20%E2%80%94%20Health%20%26%20Finance%20Insights%20with%20Neural%20Networks)
+Developed a predictive system using **Neural Networks** to analyze and compare risk in healthcare (disease prediction) and finance (stock trends).
+
+- 🧠 Dual-domain modeling with deep learning
+- 📈 Comparative analysis using real-world datasets
+- 🧰 **Tech**: TensorFlow, NumPy, Pandas, Seaborn, Matplotlib
+
+---
+
+### 🔹 [Unsupervised Clustering of High-Dimensional Image Data](https://github.com/Sruthilakshmi99/Portfolio/tree/main/Unsupervised%20Clustering%20of%20High-Dimensional%20Image%20Data%3A%20Integrating%20%20Autoencoders%20with%20Gaussian%20Mixture%20Models%20(GMM))
+Implemented an end-to-end pipeline using **Autoencoders + Gaussian Mixture Models (GMM)** for unsupervised clustering of high-dimensional image data.
+
+- 🔍 Feature extraction through dimensionality reduction
+- 📊 Cluster visualization and performance comparison with K-Means
+- 🧰 **Tech**: PyTorch, Scikit-learn, GMM, t-SNE, Matplotlib
+
+---
+
 
 ### **Languages & Programming**
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
