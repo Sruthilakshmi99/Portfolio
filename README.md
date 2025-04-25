@@ -1,7 +1,6 @@
 # 👩‍💻 Sruthi Lakshmi Vadakkapurathu Reghu
 
 🎓 MSc Data Science | 📍 Woking, Surrey  
-📬 vrsruthilakshmi99@gmail.com | [LinkedIn](https://www.linkedin.com/in/sruthi-lakshmi-v-r)
 
 ---
 
