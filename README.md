@@ -40,7 +40,7 @@ Implemented an end-to-end pipeline using **Autoencoders + Gaussian Mixture Model
 ---
 
 
-### 🔹 [Power BI Sales Report (2020–2023)](assets/reports/Sales_Report_PowerBI.pdf)
+### 🔹 [Power BI Sales Report (2020–2023)](https://github.com/Sruthilakshmi99/Portfolio/tree/main/SalesReport_Powerbi)
 An interactive business intelligence dashboard created using **Power BI** to analyze company sales data from Jan 2020 to Sep 2023.
 
 - 💰 Total sales of $681M across four major product categories
