@@ -42,8 +42,7 @@ This interactive sales report was developed using **Microsoft Power BI** and pre
 |------|---------|
 | Power BI | Data modeling, visualization, and dashboard creation |
 | DAX | Custom calculations and KPIs |
-| Excel / CSV | Base data source (assumed for transformation) |
-| GitHub Pages | Hosting portfolio and static content |
+| Excel / CSV | Base data source |
 
 ---
 
@@ -54,7 +53,7 @@ To view the static version of the report:
 👉 **[Click here to view the report (PDF)](Sales_Report_PowerBI.pdf)**  
 *(Best viewed in a desktop browser with PDF support)*
 
-To request the **interactive Power BI (PBIX) version**, contact me via the information in the [Portfolio Contact Section](#).
+To request the **interactive Power BI (PBIX) version**, contact me via the information in the Portfolio Contact Section.
 
 ---
 
