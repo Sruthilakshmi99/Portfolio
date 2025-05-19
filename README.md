@@ -40,6 +40,17 @@ Implemented an end-to-end pipeline using **Autoencoders + Gaussian Mixture Model
 ---
 
 
+### 🔹 [Power BI Sales Report (2020–2023)](assets/reports/Sales_Report_PowerBI.pdf)
+An interactive business intelligence dashboard created using **Power BI** to analyze company sales data from Jan 2020 to Sep 2023.
+
+- 💰 Total sales of $681M across four major product categories
+- 🧾 Insights into payment methods, churn rate, and customer behavior
+- 📅 Quarterly and yearly breakdowns of sales, quantity, AOV, and customer count
+- 🧰 **Tech**: Power BI, DAX, Data Modeling, PDF Reporting
+
+---
+
+
 ### **Languages & Programming**
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 
